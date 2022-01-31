@@ -8,7 +8,7 @@ let leftover = 20 % 6
 // 3. Create a function called greeting that returns "Hello, <name>!",
 // where <name> is the name given as an argument to the function.
 function greeting(name) {
-    return 'Hello, ' + name + '!'
+    return `Hello, ${name}!`
 }
 // 4. Create a function called isOdd that, given a number, will
 // return true if it is odd and false if it is not. An odd number is a
@@ -76,6 +76,17 @@ function lesser(num1, num2) {
 // eo - Saluton, <name>!
 //
 // If any other language code is used, return nothing.
+function multigreeting(name, language) {
+    if (language === "en") {
+        return `Hello, ${name}!`
+    } else if (language === "es") {
+        return `¡Hola, ${name}!`
+    } else if (language === "fr") {
+        return `Bonjour, ${name}!`
+    } else if (language === "eo") {
+        return `Saluton, ${name}!`
+    }
+}
 
 // 11. The greatest common divisor (https://en.wikipedia.org/wiki/Greatest_common_divisor)
 // is the largest integer that, given two other integers, can be divided into them. For
@@ -103,3 +114,6 @@ function lesser(num1, num2) {
 
 // Write a function called gcd that takes two arguments and returns the greatest common
 // divisor using the instructions above.
+function gcd(a, b) {
+    d = 0
+}
